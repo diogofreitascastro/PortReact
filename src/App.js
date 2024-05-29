@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Header />
-      <BrowserRouter>
+      <BrowserRouter basename="/PortfolioReact">
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/aboutme' element={<AboutMe/>}/>
