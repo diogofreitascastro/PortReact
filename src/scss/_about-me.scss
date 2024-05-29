@@ -1,0 +1,119 @@
+.about-wrapper {
+	p {
+		margin-bottom: 20px;
+	}
+
+	.intro-wrapper {
+		width: 100%;
+
+		.icons-and-text-wrapper {
+			.text-wrapper {
+				/*column-count: 1;
+
+				@include largeScreen {
+					column-count: 2;
+					column-gap: 30px;
+				}*/
+
+				p:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+
+			@include largeScreen {
+				padding-right: 30px;
+			}
+
+			.software-icons {
+				display: flex;
+				flex-flow: column;
+				grid-gap: 20px;
+
+				.adobes,
+				.code {
+					display: grid;
+					grid-template-columns: repeat(6, 1fr);
+					grid-gap: 10px;
+
+					@include mediumScreen {
+						width: fit-content;
+						grid-gap: 20px;
+					}
+
+					img {
+						@include mediumScreen {
+							width: 60px;
+						}
+					}
+				}
+			}
+		}
+
+		.img-holder {
+			margin-top: -30px;
+		}
+	}
+
+	#about-academic-history, #about-work-experience {
+		.table-item {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid lighten( $bg-color, 5%);
+
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: initial;
+				border-bottom: initial;
+			}
+
+			> div {
+				@include largeScreen {
+					padding-right: 30px;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 5px;
+
+					@include largeScreen {
+						margin-bottom: initial;
+					}
+				}
+			}
+
+			h2 {
+				@include paragraph;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+
+			h2.org-title {
+				text-align: left;
+				@include paragraph;
+
+				margin-bottom: 0;
+
+				@include largeScreen {
+					margin-bottom: 10px;
+				}
+			}
+
+			h3.org-dates {
+				text-align: left;
+				opacity: 50%;
+				font-weight: normal;
+
+				@include paragraph;
+			}
+
+			h2.course-title {
+				margin-bottom: 0px;
+
+				@include largeScreen {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

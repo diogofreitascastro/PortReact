@@ -1,0 +1,64 @@
+main {
+	section {
+		> h1 {
+			@include first-title;
+
+			margin-bottom: 30px;
+			
+			@include mediumScreen {
+				margin-bottom: 30px;
+			}
+
+			@include largeScreen {
+				margin-bottom: 60px;
+			}
+		}
+
+		&.services-megawrapper {
+			margin: auto;
+			/*max-width: 1000px;*/
+
+			*/*:not(h1)*/ {
+				text-align: left;
+			}
+
+			.service-cards-wrapper {
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 30px;
+
+				@include mediumScreen {
+					grid-template-columns: repeat(2, 1fr);
+				}
+
+				@include largeScreen {
+					grid-template-columns: repeat(2, 1fr);
+					grid-gap: 60px;
+				}
+
+				.service-card {
+					h2 {
+						@include title-with-bar;
+					}
+
+					p {
+						@include paragraph;
+					}
+
+					.more-work {
+						margin-top: 10px;
+						font-weight: 700;
+						color: $bloo !important;
+						font-size: .8rem;
+
+						i {
+							font-weight: 700;
+							color: $bloo !important;
+							font-size: .8rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

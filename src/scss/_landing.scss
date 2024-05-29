@@ -1,0 +1,146 @@
+main {
+	.section-wrapper#welcome {
+		@include onlyMobile {
+			padding: 0 30px;
+		}
+
+		@include largeScreen {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		@include xxl {
+			padding-top: 80px;
+			padding-bottom: 80px
+		}
+
+		.landing-wrapper {
+
+			.bloo {
+				color: $bloo;
+			}
+
+			* {
+				text-align: left;
+			}
+
+			min-height: 40vh;
+			align-items: center;
+			position: relative;
+
+			@include onlyMobile {
+				height: 100vh;
+				margin-top: -$main-menu-height;
+				align-content: center;
+			}
+
+			@include largeScreen {
+				height: calc(100vh - #{$main-menu-height});
+			}
+
+			@include xxl {
+				height: initial;
+			}
+
+			h1#name {
+				font-size: 2rem;
+				line-height: 2rem;
+				margin-bottom: 10px;
+
+				@include mediumScreen {
+					font-size: 3rem;
+					line-height: 3rem;
+				}
+
+				@include largeScreen {
+					font-size: 4rem;
+					line-height: 4rem;
+				}
+
+			}
+
+			a#hire-me {
+				div {
+					margin-top: 20px;
+					display: inline-block;
+					padding: 15px;
+					border-radius: 100px;
+					background: $text-color;
+					color: $bg-color;
+					width: 120px;
+					text-align: center;
+					font-weight: 700;
+					position: relative;
+
+					@include mediumScreen {
+						padding: 20px;
+						width: 150px;
+						margin-top: 40px
+					}
+
+					&:hover {
+						background: $bloo;
+
+						&::after {
+							background-color: $bloo;
+						}
+					}
+
+					@include largeScreen {
+						&::after {
+							position: absolute;
+							content: "";
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							width: 100%;
+							height: 100%;
+							border-radius: 100px;
+							background-color: $text-color;
+							transition: ease;
+							animation: hire-me 2s infinite;
+							z-index: -1;
+						}
+					}
+				}
+			}
+
+			.img-holder {
+				text-align: center;
+				margin-bottom: 40px;
+
+				@include mediumScreen {
+					padding-left: 40px;
+					margin: initial;
+					text-align: initial;
+				}
+
+				img {
+					max-width: 80%;
+
+					@include mediumScreen {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes hire-me {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		width: calc( 100% + 30px);
+		height: calc( 100% + 30px);
+	}
+
+	100% {
+		opacity: 0;
+		width: calc( 100% + 30px);
+		height: calc( 100% + 30px);
+	}
+}

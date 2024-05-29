@@ -1,0 +1,138 @@
+/* VARIABLES */
+
+$bg-color: #1E212B;
+$text-color: #f1f1f1;
+
+$bloo: #e8a952;
+
+$main-menu-height: 90px;
+$main-menu-height-scrolled: 70px;
+
+/* MIXINS */
+
+@mixin paragraph {
+    font-size: .8rem;
+    @include mediumScreen {
+        font-size: .9rem;
+    }
+    @include largeScreen {
+        font-size: 1rem;
+    }
+}
+
+@mixin filters {
+    font-size: .75rem;
+    @include mediumScreen {
+        font-size: .8rem;
+    }
+    @include largeScreen {
+        font-size: .9rem;
+    }
+}
+
+@mixin first-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+
+    @include mediumScreen {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    @include largeScreen {
+        font-size: 2.5rem;
+    }
+}
+
+
+@mixin title-with-bar {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+
+    @include mediumScreen {
+        font-size: 1.5rem;
+    }
+    
+    @include largeScreen {
+        font-size: 1.75rem;
+    }
+
+    &::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -8px;
+		background: $bloo;
+		height: 5px;
+		width: 50px;
+	}
+}
+
+@mixin h2 {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    @include mediumScreen {
+        font-size: 1.1rem;
+    }
+
+    @include largeScreen {
+        font-size: 1.3rem;
+    }
+}
+
+
+@mixin random-cmyk {
+    .random-cmyk {
+        transition: color .25s ease !important;
+    }
+    .cyan {
+        color: $cyan;
+    }
+    .magenta {
+        color: $magenta;
+    }
+    .yellow {
+        color: $yellow;
+    }
+}
+@mixin cmyk-ul-li-a-hovers {
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 20px;
+            a, a:link, a:visited {
+                color: $bg-color;
+            }
+            a.hover-cyan:hover {
+                color: $cyan;
+            }
+            a.hover-magenta:hover {
+                color: $magenta;
+            }
+            a.hover-yellow:hover {
+                color: $yellow;
+            }
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@mixin grid-gap {
+    grid-gap: 20px;
+
+    @include mediumScreen {
+        grid-gap: 30px;
+    }
+
+    @include largeScreen {
+        grid-gap: 40px;
+    }
+}
