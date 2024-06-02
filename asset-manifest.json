@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PortReact/static/css/main.8cd640e6.css",
+    "main.js": "/PortReact/static/js/main.4250d5d4.js",
+    "static/js/453.4eb71438.chunk.js": "/PortReact/static/js/453.4eb71438.chunk.js",
+    "index.html": "/PortReact/index.html",
+    "main.8cd640e6.css.map": "/PortReact/static/css/main.8cd640e6.css.map",
+    "main.4250d5d4.js.map": "/PortReact/static/js/main.4250d5d4.js.map",
+    "453.4eb71438.chunk.js.map": "/PortReact/static/js/453.4eb71438.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cd640e6.css",
+    "static/js/main.4250d5d4.js"
+  ]
+}
