@@ -1,0 +1,1 @@
+This is me trying to learn and convert https://github.com/diogofreitascastro/Portfolio into ReactJS, thought it seems React doesn't go well with github pages so I will have to try and deploy it on an actual website later.
