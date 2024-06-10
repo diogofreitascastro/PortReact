@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PortReact/static/css/main.8cd640e6.css",
-    "main.js": "/PortReact/static/js/main.583a37da.js",
-    "static/js/453.4eb71438.chunk.js": "/PortReact/static/js/453.4eb71438.chunk.js",
-    "index.html": "/PortReact/index.html",
-    "main.8cd640e6.css.map": "/PortReact/static/css/main.8cd640e6.css.map",
-    "main.583a37da.js.map": "/PortReact/static/js/main.583a37da.js.map",
-    "453.4eb71438.chunk.js.map": "/PortReact/static/js/453.4eb71438.chunk.js.map"
+    "main.css": "/static/css/main.06df91ac.css",
+    "main.js": "/static/js/main.d058305d.js",
+    "static/js/453.4eb71438.chunk.js": "/static/js/453.4eb71438.chunk.js",
+    "index.html": "/index.html",
+    "main.06df91ac.css.map": "/static/css/main.06df91ac.css.map",
+    "main.d058305d.js.map": "/static/js/main.d058305d.js.map",
+    "453.4eb71438.chunk.js.map": "/static/js/453.4eb71438.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cd640e6.css",
-    "static/js/main.583a37da.js"
+    "static/css/main.06df91ac.css",
+    "static/js/main.d058305d.js"
   ]
 }
